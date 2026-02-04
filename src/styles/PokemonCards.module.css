@@ -3,9 +3,14 @@
   border-radius: 8px;
   padding: 8px;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: var(--white-color);
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border: 2px solid var(--auxiliary-color);
 }
 
 .cardGrid {
@@ -14,4 +19,5 @@
   grid-template-rows: repeat(3, 1fr);
   gap: 16px;
   padding: 16px;
+  height: 85vh;
 }

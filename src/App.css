@@ -1,3 +1,7 @@
+.auxColor {
+  color: var(--auxiliary-color);
+}
+
 .column {
   display: flex;
   flex-direction: column;

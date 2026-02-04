@@ -16,7 +16,8 @@ export default function PokemonCards({ handleCardClick }) {
     return arr;
   }
 
-  function handleShuffle() {
+  function handleGame(pokemon) {
+    handleCardClick(pokemon.name);
     setGameBoard(shuffleArray(pokemonList).slice(0, 12));
   }
 
@@ -69,10 +70,10 @@ export default function PokemonCards({ handleCardClick }) {
         <button
           key={pokemon.name}
           className={styles.card}
-          onClick={handleShuffle}
+          onClick={() => handleGame(pokemon)}
         >
             <img src={pokemon.image} alt={pokemon.name} />
-          <p>{pokemon.name}</p>
+          <h3>{pokemon.name}</h3>
         </button>
       ))}
     </div>
