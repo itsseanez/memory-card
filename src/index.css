@@ -1,0 +1,22 @@
+:root {
+  --primary-color: #252422;
+  --secondary-color: #403d39;
+  --tertiary-color: #ccc5b9;
+  --auxiliary-color: #eb5e28;
+  --white-color: #fffcf2;
+  --font-family:
+    system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+}
