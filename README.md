@@ -22,11 +22,11 @@ This project helped reinforce several core React concepts:
 
 ## 🚀 Features
 
+- Utilitize PokéAPI for cards
 - Score tracking and best score persistence
 - Randomized card order after each click
 - Immediate game reset on duplicate selection
 - Responsive layout
-- Clean component-based architecture
 
 ---
 
